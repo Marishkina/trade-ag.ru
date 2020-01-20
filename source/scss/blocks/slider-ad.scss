@@ -1,0 +1,16 @@
+.swiper-container-ad {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.swiper-slide-ad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #000;
+}

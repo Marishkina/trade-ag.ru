@@ -1,0 +1,66 @@
+.callback {
+  display: flex;
+  justify-content: space-between;
+}
+
+.callback-button {
+  width: 130px;
+  height: 40px;
+  font-family: "DaxlinePro", "Arial", sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 14px;
+  background-color: #fff;
+  border: 2px solid $main-color;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.callback-tel {
+  width: 195px;
+  margin-left: 25px;
+}
+
+.callback-number {
+  margin-top: 2px;
+  margin-bottom: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .callback-button {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .callback-button {
+    width: 188px;
+    height: 50px;
+    padding-top: 4px;
+    font-size: 16px;
+    line-height: 19px;
+    border: 3px solid $main-color;
+  }
+
+  .callback-tel {
+    width: 195px;
+    margin-left: 25px;
+  }
+
+  .callback-number {
+    margin-top: 0;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}

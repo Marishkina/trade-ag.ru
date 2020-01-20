@@ -1,0 +1,48 @@
+.submenu {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .submenu {
+    position: absolute;
+    z-index: 5;
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    list-style: none;
+    background: #c22a2e;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+  }
+
+  .submenu a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 26px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #e33439;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .submenu a {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 36px;
+    font-size: 16px;
+    line-height: 39px;
+  }
+
+  .submenu__item:last-child a {
+    min-height: 53px;
+  }
+}

@@ -1,0 +1,24 @@
+@media (min-width: $desktop-width) {
+  .social {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 40px;
+    margin-top: 13px;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  .social__item {
+    margin-left: 10px;
+  }
+
+  .social__item svg {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.event__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .event--margin-right {
+    margin-right: 20px;
+  }
+
+  .event {
+    position: relative;
+  }
+
+  .event__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    width: 180px;
+    height: 123px;
+    padding-top: 10px;
+    padding-left: 15px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .event__wrapper {
+    width: 218px;
+    height: 233px;
+    padding-top: 27px;
+    padding-left: 26px;
+  }
+
+  .event img {
+    width: 627px;
+    height: 233px;
+  }
+
+  .event--margin-right {
+    margin-right: 25px;
+  }
+}

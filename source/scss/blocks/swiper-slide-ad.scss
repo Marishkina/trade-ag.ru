@@ -1,0 +1,158 @@
+.slider-ad {
+  position: relative;
+}
+
+.swiper-slide-ad {
+  overflow: hidden;
+  border: none;
+}
+
+.swiper-slide-ad img {
+  display: block;
+  max-width: 480px;
+  height: 155px;
+}
+
+.swiper-slide__text-block {
+  top: 5px;
+  right: 50%;
+  width: 155px;
+  height: 135px;
+  margin-right: -22px;
+
+  @include pseudo;
+}
+
+.swiper-slide__title {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  color: 323232;
+  text-align: left;
+
+  &::after {
+    bottom: -7px;
+    left: 2px;
+    width: 93px;
+    height: 2px;
+    background-color: $main-color;
+
+    @include pseudo;
+  }
+}
+
+.swiper-slide__text {
+  width: 156px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  color: 323232;
+  text-align: left;
+}
+
+.swiper-slide__button {
+  width: 125px;
+  height: 32px;
+  padding-bottom: 3px;
+  margin-left: -35px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 19px;
+  color: 323232;
+  background-color: transparent;
+  border: 2px solid $main-color;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .swiper-slide-ad img {
+    max-width: 960px;
+    height: 310px;
+  }
+
+  .swiper-slide__text-block {
+    top: 20px;
+    right: 50%;
+    width: 515px;
+    height: 375px;
+    margin-right: -190px;
+  }
+
+  .swiper-slide__title {
+    margin-bottom: 35px;
+    font-size: 36px;
+    line-height: 18px;
+
+    &::after {
+      bottom: -16px;
+      width: 93px;
+      height: 3px;
+
+      @include pseudo;
+    }
+  }
+
+  .swiper-slide__text {
+    width: 256px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .swiper-slide__button {
+    width: 159px;
+    height: 50px;
+    padding-bottom: 3px;
+    margin-left: -354px;
+    border: 2px solid $main-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider-ad {
+    min-height: 620px;
+  }
+
+  .swiper-slide-ad img {
+    max-width: 1920px;
+    height: 620px;
+  }
+
+  .swiper-slide__text-block {
+    top: 89px;
+    right: 50%;
+    width: 515px;
+    height: 375px;
+    margin-right: 126px;
+  }
+
+  .swiper-slide__title {
+    margin-bottom: 48px;
+    font-size: 44px;
+    line-height: 60px;
+  }
+
+  .swiper-slide__text {
+    margin-bottom: 65px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .swiper-slide__button {
+    margin-left: -354px;
+    font-size: 16px;
+    line-height: 19px;
+    border: 3px solid $main-color;
+  }
+}

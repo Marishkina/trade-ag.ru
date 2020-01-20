@@ -1,0 +1,44 @@
+@mixin pseudo {
+  position: absolute;
+  content: "";
+}
+
+@mixin site-list__after-tablet-width {
+  top: 28px;
+  width: 12px;
+  height: 10px;
+  background-image: url("../img/polygon.svg");
+  background-repeat: no-repeat;
+
+  @include pseudo;
+}
+
+@mixin site-list__after {
+  top: 29px;
+  width: 12px;
+  height: 10px;
+  background-image: url("../img/polygon.svg");
+  background-repeat: no-repeat;
+
+  @include pseudo;
+}
+
+@mixin product__list-class__after-tablet-width {
+  bottom: 10px;
+  z-index: -1;
+  width: 23px;
+  height: 23px;
+  border-radius: 4px;
+
+  @include pseudo;
+}
+
+@mixin product__list-class__after {
+  bottom: 8px;
+  z-index: -1;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+
+  @include pseudo;
+}

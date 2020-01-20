@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "DaxlinePro";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/DaxlinePro-Regular.woff2") format("woff2"), url("../fonts/DaxlinePro-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DaxlinePro";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/DaxlinePro-Bold.woff2") format("woff2"), url("../fonts/DaxlinePro-Bold.woff") format("woff");
+}
+
+body {
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  font-family: "DaxlinePro", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 14px;
+  color: #323232;
+  background-color: #fff;
+}
+
+.container {
+  width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 708px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1281px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(100%);
+  border: 0;
+}

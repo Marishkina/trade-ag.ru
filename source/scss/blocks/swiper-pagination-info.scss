@@ -1,0 +1,37 @@
+.swiper-pagination-info {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  margin: 0 2px;
+}
+
+@media (min-width: $tablet-width) {
+  .swiper-pagination-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    margin: 0 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .swiper-pagination-info {
+    margin-top: 52px;
+    margin-left: 46px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+  }
+}

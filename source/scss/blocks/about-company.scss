@@ -1,0 +1,165 @@
+.about-company {
+  box-sizing: border-box;
+  min-height: 496px;
+  padding-bottom: 20px;
+}
+
+.about-company__title {
+  padding-top: 26px;
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0d0d14;
+  text-align: center;
+}
+
+.about-company__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.about-company__block-video {
+  width: 320px;
+  height: 180px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+}
+
+.about-company__text {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 22px;
+
+  & span {
+    color: $main-color;
+  }
+}
+
+.about-company__advantages {
+  width: 280px;
+  padding-right: 20px;
+  padding-left: 20px;
+  line-height: 19px;
+
+  & p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+}
+
+.about-company__advantages-list {
+  padding-left: 33px;
+  margin-top: 0;
+  list-style: none;
+}
+
+.about-company__advantages-item {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 17px;
+
+  &::before {
+    top: 4px;
+    left: -22px;
+    width: 5px;
+    height: 5px;
+    background-color: $main-color;
+    border-radius: 50%;
+
+    @include pseudo;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-company__block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 708px;
+  }
+
+  .about-company__text {
+    width: 328px;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .about-company__advantages {
+    width: 708px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 8px;
+
+    & p {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+  }
+
+  .about-company__advantages-list {
+    padding-left: 43px;
+  }
+
+  .about-company__advantages-item {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-company__title {
+    padding-top: 68px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 38px;
+    font-weight: normal;
+  }
+
+  .about-company__block {
+    width: 1281px;
+  }
+
+  .about-company__block-video {
+    width: 380px;
+    height: 213px;
+    margin-top: 36px;
+    margin-right: 58px;
+  }
+
+  .about-company__text {
+    width: 430px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 30px;
+    margin-right: 6px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .about-company__advantages {
+    width: 406px;
+
+    & p {
+      margin-top: 16px;
+    }
+  }
+
+  .about-company__advantages-item {
+    font-size: 16px;
+
+    &::before {
+      left: -32px;
+      width: 7px;
+      height: 7px;
+    }
+  }
+}

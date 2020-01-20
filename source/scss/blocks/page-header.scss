@@ -1,0 +1,125 @@
+.page-header {
+  box-sizing: border-box;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page-header__wrapper {
+  position: relative;
+  min-height: 50px;
+  background-color: #ececec;
+}
+
+.page-header__list-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__info {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 53px;
+  padding-top: 16px;
+  margin-bottom: 23px;
+}
+
+.page-header__basket-wrapper {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  margin-left: -45px;
+}
+
+.page-header__basket {
+  position: relative;
+  width: 110px;
+  margin-top: 30px;
+  margin-left: 80px;
+  font-size: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.page-header__icon--shopping-basket-slider {
+  margin-top: -5px;
+  margin-left: 80px;
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.page-header__social-list {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__info {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 23px;
+    padding-left: 30px;
+    margin-bottom: 13px;
+  }
+
+  .page-header__basket {
+    width: 190px;
+    margin-left: 235px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main-color;
+    text-align: right;
+
+    &::before {
+      top: -1px;
+      left: -35px;
+      width: 22px;
+      height: 19px;
+      background-image: url("../img/shopping-basket-slider.svg");
+
+      @include pseudo;
+    }
+  }
+
+  .page-header__icon--shopping-basket-slider {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__info {
+    justify-content: flex-start;
+    padding-top: 33px;
+    padding-left: 2px;
+    margin-bottom: 23px;
+  }
+
+  .page-header__basket-wrapper {
+    top: 85px;
+    left: 50%;
+    margin-left: 371px;
+  }
+
+  .page-header__basket {
+    margin-top: 16px;
+    margin-left: 136px;
+
+    &::before {
+      top: -12px;
+      left: -54px;
+      width: 36px;
+      height: 36px;
+      background-image: url("../img/shopping-basket.svg");
+
+      @include pseudo;
+    }
+  }
+}

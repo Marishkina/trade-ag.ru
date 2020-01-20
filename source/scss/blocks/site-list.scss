@@ -1,0 +1,197 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  position: relative;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #c22a2e;
+  }
+}
+
+.site-list__item-link {
+  display: block;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 19px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #c22a2e;
+  }
+
+  &:active {
+    color: #faacae;
+  }
+
+  &--active {
+    color: #faacae;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .site-list__item-link {
+    font-size: 13px;
+  }
+
+  .site-list__item:hover .submenu {
+    cursor: pointer;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  .submenu a {
+    &:active {
+      color: #faacae;
+    }
+  }
+
+  .site-list__item-link--main {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .site-list__item-link--company {
+    position: relative;
+    padding-right: 30px;
+    padding-left: 15px;
+
+    &::after {
+      left: 100px;
+
+      @include site-list__after-tablet-width;
+    }
+  }
+
+  .site-list__item-link--catalog {
+    position: relative;
+    padding-right: 30px;
+    padding-left: 15px;
+
+    &::after {
+      left: 134px;
+
+      @include site-list__after-tablet-width;
+    }
+  }
+
+  .site-list__item-link--expert {
+    position: relative;
+    padding-right: 30px;
+    padding-left: 15px;
+
+    &::after {
+      left: 106px;
+
+      @include site-list__after-tablet-width;
+    }
+  }
+
+  .site-list__item-link--patient {
+    position: relative;
+    padding-right: 30px;
+    padding-left: 15px;
+
+    &::after {
+      left: 82px;
+
+      @include site-list__after-tablet-width;
+    }
+  }
+
+  .site-list__item-link--contact {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    min-height: 70px;
+    padding-top: 2px;
+  }
+
+  .site-list__item-link {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .site-list__item-link--main {
+    padding-right: 97px;
+    padding-left: 55px;
+  }
+
+  .site-list__item-link--company {
+    position: relative;
+    padding-right: 60px;
+    padding-left: 49px;
+
+    &::after {
+      left: 163px;
+
+      @include site-list__after;
+    }
+  }
+
+  .site-list__item-link--catalog {
+    position: relative;
+    padding-right: 68px;
+    padding-left: 78px;
+
+    &::after {
+      left: 233px;
+
+      @include site-list__after;
+    }
+  }
+
+  .site-list__item-link--expert {
+    position: relative;
+    padding-right: 70px;
+    padding-left: 70px;
+
+    &::after {
+      left: 192px;
+
+      @include site-list__after;
+    }
+  }
+
+  .site-list__item-link--patient {
+    position: relative;
+    padding-right: 83px;
+    padding-left: 73px;
+
+    &::after {
+      left: 172px;
+
+      @include site-list__after;
+    }
+  }
+
+  .site-list__item-link--contact {
+    padding-right: 55px;
+    padding-left: 55px;
+  }
+}
